@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Viewport Snap",
+    "description": "Capture web pages quickly and download clean PNG screenshots.",
+    "version": "0.1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    }
+}
