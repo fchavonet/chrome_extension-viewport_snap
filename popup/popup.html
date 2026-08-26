@@ -10,6 +10,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./popup.css">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../libs/bootstrap_icons/bootstrap-icons.min.css">
+
     <!-- Script -->
     <script src="./popup.js" defer></script>
 </head>
@@ -17,7 +20,7 @@
 <body>
     <header>
         <div id="title-container">
-            <img id="extension-icon" src="../images/icon-512.png" alt="ViewportSnap icon">
+            <img id="extension-icon" src="../images/icon-512.png" alt="Viewport Snap icon">
 
             <h1>Viewport Snap</h1>
         </div>
@@ -26,7 +29,50 @@
     </header>
 
     <main>
+        <div class="capture-container">
+            <button id="capture-visible-button" class="capture-button" type="button">
+                <i class="bi bi-camera"></i>
+
+                <div class="button-content">
+                    <span class="button-title">Visible Area</span>
+                    <span class="button-description">
+                        Capture the current viewport
+                    </span>
+                </div>
+            </button>
+
+            <button id="capture-full-page-button" class="capture-button" type="button">
+                <i class="bi bi-file-earmark-image"></i>
+
+                <div class="button-content">
+                    <span class="button-title">Full Page</span>
+                    <span class="button-description">
+                        Capture the entire page
+                    </span>
+                </div>
+            </button>
+
+            <button id="capture-area-button" class="capture-button" type="button">
+                <i class="bi bi-bounding-box-circles"></i>
+
+                <div class="button-content">
+                    <span class="button-title">Select Area</span>
+                    <span class="button-description">
+                        Capture a custom area
+                    </span>
+                </div>
+            </button>
+        </div>
+
+        <p id="status" aria-live="polite"></p>
     </main>
+
+    <footer>
+        <a class="social-media-link" href="https://github.com/fchavonet/chrome_extension-viewport_snap/tree/main" target="_blank">
+            <i class="bi bi-github"></i>
+            GitHub Repository
+        </a>
+    </footer>
 </body>
 
 </html>

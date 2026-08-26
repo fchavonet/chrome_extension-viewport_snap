@@ -3,6 +3,10 @@
     "name": "Viewport Snap",
     "description": "Capture web pages quickly and download clean PNG screenshots.",
     "version": "0.1.0",
+    "permissions": [
+        "activeTab",
+        "downloads"
+    ],
     "background": {
         "service_worker": "background.js"
     },
