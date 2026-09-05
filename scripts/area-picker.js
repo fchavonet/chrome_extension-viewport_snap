@@ -1,4 +1,4 @@
-(() => {
+(function () {
   const existingOverlay = document.querySelector(
     "#viewportsnap-area-overlay"
   );

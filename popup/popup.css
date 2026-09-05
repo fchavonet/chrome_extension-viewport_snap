@@ -25,6 +25,17 @@
     --primary-color: rgb(14, 165, 233);
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 2.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    margin: 0 2px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
 /* GENERAL */
 body {
     width: 320px;
@@ -41,7 +52,25 @@ body.dark {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
+}
+
+hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid var(--light-border-color);
+}
+
+hr.dark {
+    border-top: 1px solid var(--dark-border-color);
+}
+
+.mute {
+    color: var(--light-mute-text-color);
+}
+
+.mute.dark {
+    color: var(--dark-mute-text-color);
 }
 
 /* HEADER */
@@ -59,7 +88,12 @@ header {
 }
 
 header.dark {
-    border-color: var(--dark-border-color);
+    border-bottom: 1px solid var(--dark-border-color);
+}
+
+header a {
+    text-align: center;
+    text-decoration: none;
 }
 
 #title-container {
@@ -79,6 +113,7 @@ header.dark {
 #extension-icon {
     width: 25px;
     height: 25px;
+    margin: 0 5px;
 }
 
 header p {
@@ -98,12 +133,14 @@ main {
 .capture-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .capture-button {
     width: 100%;
-    min-height: 64px;
+    min-height: 65px;
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -117,7 +154,7 @@ main {
     border-radius: 10px;
     background-color: var(--light-background-color);
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .capture-button.dark {
@@ -200,6 +237,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     border-top: 1px solid var(--light-border-color);
 }
 
