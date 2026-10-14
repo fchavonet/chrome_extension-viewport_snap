@@ -86,7 +86,7 @@ chrome://extensions/
 
 5. Generated files use a filename containing the website hostname, capture type, and timestamp.
 
-You can also install the Chrome extension directly from the Chrome Web Store by clicking [here]().
+You can also install the Chrome extension directly from the Chrome Web Store by clicking [here](https://chromewebstore.google.com/detail/viewport-snap/iemaldakjfjhbodmanhmpgchgepndbon).
 
 <p align="center">
 	<picture>
